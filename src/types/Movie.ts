@@ -1,6 +1,6 @@
 export interface Movie {
     id: string,
-    title: string,
+    title?: string,
     genre: string[],
     description: string,
     backdropUrl: string,

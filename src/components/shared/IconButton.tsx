@@ -5,7 +5,7 @@ interface IconButtonProps {
 }
 
 export const IconButton = ({ icon, onClick, variant='default'}: IconButtonProps) => (
-    <button className={'icon-btn icon-btn--${variant}'} onClick={onClick}>
+    <button className={`icon-btn icon-btn--${variant}`} onClick={onClick}>
         {icon}
     </button>
 )

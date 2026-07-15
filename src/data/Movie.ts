@@ -11,7 +11,7 @@ export const heroMovie: Movie = {
   posterUrl:
     "https://media.themoviedb.org/t/p/w220_and_h330_face/2pnZWHg9E34LLwLBLYUPLdZwer8.jpg",
   runtime: "5 Seasons",
-  trailerUrl: "https://youtu.be/K1-FoFj8Jbo?si=4n_W3EsfLzrQ4K5W",
+  trailerUrl: "https://www.youtube.com/embed/K1-FoFj8Jbo?si=Wb5zncLStVdtxxQb",
   year: 2019,
 };
 

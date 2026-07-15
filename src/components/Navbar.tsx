@@ -1,4 +1,4 @@
-spanimport { useState } from 'react';
+import { useState } from 'react';
 import '../styles/Navbar.css';
 import { Button } from '../components/shared/Button';
 import { IconButton } from '../components/shared/IconButton';
@@ -9,12 +9,12 @@ export const Navbar = () => {
         <nav className="navbar">
             <div className="nav-container">
                 <IconButton icon="" onClick={() => setMenuOpen(!menuOpen)} />
-                <span className="navbar-logo">tri<span className="navbar-logo-accent>lok</span>
+                <span className="navbar-logo">tri<span className="navbar-logo-accent">lok</span>
                 </span>
 
-                <div className="navbar-action>
+                <div className="navbar-action">
                     <IconButton icon="" />
-                    <Button variant="sub">Subscribe</Button>
+                    <Button variant="subscribe" onClick={() => {}}>Subscribe</Button>
                 </div>
             </div>
 
@@ -27,4 +27,4 @@ export const Navbar = () => {
                 </div>
             )}
         </nav>
-    );
+    )}

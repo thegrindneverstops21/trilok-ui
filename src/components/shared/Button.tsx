@@ -4,8 +4,8 @@ interface ButtonProps {
     onClick: () =>void;
 }
 
-export const Button = ({children, variant='solid' onclick}: ButtonProps) => (
-    <button className={'btn btn--${variant}'} onClick={onClick}>
+export const Button = ({children, variant='solid', onClick}: ButtonProps) => (
+    <button className={`btn btn--${variant}`} onClick={onClick}>
         {children}
     </button>
 );

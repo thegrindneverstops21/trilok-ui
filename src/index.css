@@ -10,3 +10,44 @@ body {
     font-family: var(--font-body);
 }
 
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 var(--spacing-xl);
+    }
+}
+
+:root {
+    --color-bg: #0d0d0d;
+    --color-bg-secondary: #1a1a1a;
+    --color-red: #e50914;
+    --color-red-hover: #f6121d;
+    --color-white: #ffffff;
+    --color-gray-light: #b3b3b3;
+    --color-gary-mid: #7a7a7a;
+    --color-purple: #6c3ce9;
+    --color-teal: #17c3b2;
+    --color-orange: #f4a11d;
+    --font-heading: 'Anton', 'Oswald', sans-serif;
+    --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    --radius-pill: 999px;
+    --radius-sm: 4px;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+}
+

@@ -1,0 +1,10 @@
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

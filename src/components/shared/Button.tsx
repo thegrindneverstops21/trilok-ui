@@ -3,7 +3,7 @@ interface ButtonProps {
     children: React.ReactNode;
     variant?: 'solid' | 'outline' | 'subscribe';
     icon?: string;
-    onClick: () => void;
+    onClick?: () => void;
 }
 
 export const Button = ({ children, variant = 'solid', icon, onClick }: ButtonProps) => (

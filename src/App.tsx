@@ -22,7 +22,7 @@ export default function App() {
         movie={heroMovie}
         thumbnails={heroThumbnails}
       />
-      <div>
+      <div className="container">
         <MovieRow title="Latest Release" movies={latestRelease} />
         <MovieRow title="Top Trending" movies={topTrending} showRank />
         <GenreSection />

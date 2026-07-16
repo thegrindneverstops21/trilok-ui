@@ -16,7 +16,12 @@ const footerData = [
   },
 ];
 
-const socialIcons = ["facebook", "twitter", "instagram", "youtube"];
+const socialIcons = [
+  { icon: "bi-facebook", label: "Facebook" },
+  { icon: "bi-twitter", label: "Twitter" },
+  { icon: "bi-instagram", label: "Instagram" },
+  { icon: "bi-youtube", label: "YouTube" },
+];
 
 export const Footer = () => (
   <footer className="footer">
@@ -26,8 +31,8 @@ export const Footer = () => (
           tri<span className="footer-accent">lok</span>
         </span>
         <p className="footer-contact">
-          <span>trilok007@sample.com</span>
-          <span>+001 2390 27649</span>
+          <span><i className="bi bi-envelope" /> trilok007@sample.com</span>
+          <span><i className="bi bi-telephone" /> +001 2390 27649</span>
         </p>
       </div>
 
@@ -35,11 +40,11 @@ export const Footer = () => (
         <Column key={col.title} title={col.title} links={col.links} />
       ))}
       <div className="footer-column">
-        <h4 className="footer-title">Follow Us</h4>
+        <h4 className="column-title">Follow Us</h4>
         <div className="footer-socials">
-          {socialIcons.map((icon) => (
-            <a href="#" key={icon} className="footer-icon">
-              {icon[0].toUpperCase()}
+          {socialIcons.map(({ icon, label }) => (
+            <a href="#" key={label} aria-label={label} className="footer-icon">
+              <i className={`bi ${icon}`} />
             </a>
           ))}
         </div>

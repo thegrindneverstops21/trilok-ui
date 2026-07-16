@@ -8,8 +8,10 @@ export const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="nav-container container">
-                <IconButton icon="list" ariaLabel="Menu" onClick={() => setMenuOpen(!menuOpen)} />
+            <div className="nav-container">
+                <div className='nav-hamburger'>
+                    <IconButton icon="list" ariaLabel="Menu" onClick={() => setMenuOpen(!menuOpen)} />
+                </div>
 
                 <span className="navbar-logo">
                     tri<span className="navbar-logo-accent">lok</span>
@@ -17,7 +19,7 @@ export const Navbar = () => {
 
                 <div className="navbar-action">
                     <IconButton icon="search" ariaLabel="Search" />
-                    <Button variant="subscribe" icon="bookmark-plus" onClick={() => {}}>
+                    <Button variant="subscribe" icon="bookmark-plus" onClick={() => { }}>
                         Subscribe
                     </Button>
                 </div>

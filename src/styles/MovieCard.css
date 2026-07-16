@@ -1,15 +1,12 @@
 .movie-card{
     position: relative;
-    width: 190px;
+    width: 140px;
     aspect-ratio: 2 / 3;
     border-radius: var(--radius-sm);
     overflow: hidden;
     cursor: pointer;
     flex-shrink: 0;
     transition: 0.25s;
-    height: 250px;
-    gap: 10px;
-    overflow-x: auto/scroll;
 }
 
 .movie-card:hover {

@@ -1,44 +1,47 @@
 .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    border: none;
-    cursor: pointer;
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    transition: background-color 0.2s ease, transform 0.15s ease;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
 }
 
 .btn--solid {
-    background: var(--color-white);
-    color: var(--color-bg);
-    padding: 0.55rem 1.25rem;
-    border-radius: var(--radius-sm);
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.btn--solid:hover {
+  background-color: var(--color-red-hover);
+  transform: translateY(-1px);
 }
 
 .btn--outline {
-    background: transparent;
-    color: var(--color-white);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 0.5rem 1.2rem;
-    border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-white);
+  border: 1.5px solid var(--color-white);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-red);
+  color: var(--color-bg);
 }
 
 .btn--subscribe {
-    background: var(--color-red);
-    color: var(--color-white);
-    padding: 0.5rem 1.1rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.78rem;
+  background: var(--color-red);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
 }
 
 .btn--subscribe:hover {
-    background: var(--color-red-hover);
+  background: var(--color-red-hover);
 }
 
-.btn:active {
-    transform: scale(0.97);
-}
+

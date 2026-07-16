@@ -1,5 +1,5 @@
 .movie-row {
-  padding: 100rem;
+  padding: var(--spacing--md);
 }
 
 .movie-row-title {
@@ -10,6 +10,8 @@
   line-height: 1.5;
   margin-bottom: var(--spacing-md);
   padding:  var(--spacing-md);
+  display: grid;
+  
 }
 
 .movie-row-scroll {
@@ -26,16 +28,17 @@
 
 .movie-row-drag {
     display: inline-block;
-    margin-top: var(--spacing-sm) var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    margin-left: var(--spacing-md);
     font-size: 0.75rem;
-    color: var(--color-grey-mid);
+    color: var(--color-gray-mid);
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   .movie-row {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
   }
   .movie-row-title {
     font-size: 2rem;

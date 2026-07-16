@@ -6,6 +6,7 @@
   align-items: center;
   color: #fff;
   font-family: "Inter", system-ui, sans-serif;
+  max-height: 610px;
 }
 
 .hero-background {

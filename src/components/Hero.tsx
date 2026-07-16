@@ -46,11 +46,6 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
           )}
         </p>
 
-        <div className="hero-nav-arrows">
-          <IconButton variant="round" icon="→" />
-          <IconButton variant="round" icon="←" />
-        </div>
-
         <div className="hero-play">
           <button className="hero-play-btn" onClick={() => setIsPlaying(true)}>
             <svg viewBox="0 0 24 24" width="20" height="20">
@@ -59,8 +54,15 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
           </button>
           <span className="hero-stream-label">Streaming Now</span>
         </div>
-
-        
+        <div className="hero-nav-arrows">
+          <IconButton variant="round" icon="→" />
+          <IconButton variant="round" icon="←" />
+        </div>
+      </div>
+      <div className="hero-thumbnails">
+        {thumbnails.map((thumb, i) => (
+          <img key={i} src={thumb} alt="" className="hero-thumbnail" />
+        ))}
       </div>
 
       {isPlaying && movie.trailerUrl && (

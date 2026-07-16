@@ -8,12 +8,21 @@ export const Navbar = () => {
     return(
         <nav className="navbar">
             <div className="nav-container">
-                <IconButton icon="" onClick={() => setMenuOpen(!menuOpen)} />
+                <div className="nav-hambuger">
+                    <IconButton icon="MENU" onClick={() => setMenuOpen(!menuOpen)} />
+                </div>
                 <span className="navbar-logo">tri<span className="navbar-logo-accent">lok</span>
                 </span>
 
+                <div className='nav-link-desktop'>
+                     <a href="#" className="nav-link">Home</a>
+                    <a href="#" className="nav-link">Movies</a>
+                    <a href="#" className="nav-link">TV Shows</a>
+                    <a href="#" className="nav-link">Genre</a>F
+                </div>
+
                 <div className="navbar-action">
-                    <IconButton icon="" />
+                    <IconButton icon="SEARCH" />
                     <Button variant="subscribe" onClick={() => {}}>Subscribe</Button>
                 </div>
             </div>

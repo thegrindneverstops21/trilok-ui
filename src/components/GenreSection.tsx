@@ -3,10 +3,10 @@ import { GenreBlock } from "./GenreBlock";
 
 export const GenreSection = () => (
     <section className="genre-section">
-        <h2 className="genre-section-title">Select Genre</h2>
-
         <div className="genre-section-grid">
-            {movieGenre.map((genre) =>(
+            <h2 className="genre-section-title">Select Genre</h2>
+
+            {movieGenre.map((genre) => (
                 <GenreBlock key={genre.id} label={genre.label} color={genre.color} />
             ))}
         </div>

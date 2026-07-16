@@ -1,28 +1,30 @@
 .icon-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
     background: transparent;
     border: none;
     color: var(--color-white);
-    font-size: 1.15rem;
     cursor: pointer;
-    padding: 0;
-    transition: color 0.2s ease, opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease, backround-color 0.2s ease;
 }
 
-.icon-btn:hover {
-    color: var(--color-red);
+.icon-btn--default {
+    padding: 0.5rem;
+    opacity:0.85;
+}
+
+.icon-btn--default:hover {
+    opacity: 1;
 }
 
 .icon-btn--round {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: var(--radius-pill);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .icon-btn--round:hover {
-    background: rgba(255, 255, 255, 0.15);
-    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
 }

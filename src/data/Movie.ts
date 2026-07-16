@@ -68,6 +68,28 @@ export const latestRelease: Movie[] = [
     trailerUrl: "",
     year: 2026,
   },
+  {
+    id: "lucky",
+    title: "",
+    genre: ['Drama', 'Crime'],
+    description: "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+    backdropUrl: "",
+    posterUrl: "https://media.themoviedb.org/t/p/w220_and_h330_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+    runtime: "1 Season",
+    trailerUrl: "",
+    year: 2026
+  },
+  {
+     id: "lucky",
+    title: "",
+    genre: ['Drama', 'Crime'],
+    description: "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+    backdropUrl: "",
+    posterUrl: "https://media.themoviedb.org/t/p/w220_and_h330_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+    runtime: "1 Season",
+    trailerUrl: "",
+    year: 2026
+  },
 ];
 
 export const topTrending: Movie[] = [
@@ -114,6 +136,34 @@ export const topTrending: Movie[] = [
     rank: 2,
   },
   {
+    id: "redemption",
+    title: "",
+    genre: ["Crime", "Drama"],
+    description:
+      "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    backdropUrl: "",
+    posterUrl:
+      "https://media.themoviedb.org/t/p/w220_and_h330_face/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    runtime: "2h 22m",
+    trailerUrl: "",
+    year: 1994,
+    rank: 1,
+  },
+    {
+    id: "redemption",
+    title: "",
+    genre: ["Crime", "Drama"],
+    description:
+      "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    backdropUrl: "",
+    posterUrl:
+      "https://media.themoviedb.org/t/p/w220_and_h330_face/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    runtime: "2h 22m",
+    trailerUrl: "",
+    year: 1994,
+    rank: 1,
+  },
+    {
     id: "redemption",
     title: "",
     genre: ["Crime", "Drama"],

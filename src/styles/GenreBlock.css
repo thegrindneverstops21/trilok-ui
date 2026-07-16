@@ -16,7 +16,6 @@
     display: flex;
     gap:var(--spacing-sm);
     overflow-x: auto;
-    scrollbar-width: none;
     padding: 0 var(--spacing-md);
 }
 

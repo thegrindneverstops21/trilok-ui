@@ -14,13 +14,14 @@ export const MovieRow: React.FC<MovieRowProp> = ({
   showRank = false,
 }) => (
   <section className="movie-row">
-    <h2 className="movie-row-title">{title}</h2>
+    <div className="movie-row-left">
+      <h2 className="movie-row-title">{title}</h2>
+      <span className="movie-row-drag">DRAG TO NEXT → </span>
+    </div>
     <div className="movie-row-scroll">
       {movies.map((movie: Movie) => (
         <MovieCard key={movie.id} movie={movie} showRank={showRank} />
       ))}
     </div>
-
-    <span className="movie-row-drag">DRAG TO NEXT → </span>
   </section>
 );

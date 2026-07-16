@@ -31,7 +31,7 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
         <h1 className="hero-title">{movie.title}</h1>
 
         <p className="hero-meta">
-          {movie.year} • {movie.runtime} • {movie.genre.join(" & ")}
+          {movie.year} • {movie.runtime} • {movie.language} • {movie.genre.join(" / ")}
         </p>
 
         <p className="hero-description">

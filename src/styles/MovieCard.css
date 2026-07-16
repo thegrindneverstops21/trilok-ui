@@ -54,6 +54,6 @@
     right: 0.5rem;
     font-family: var(--font-heading);
     font-size: 3rem;
-    color: rgba(255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1;
 }

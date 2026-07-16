@@ -1,29 +1,27 @@
 import { useState } from 'react';
 import '../styles/Navbar.css';
-import { Button } from '../components/shared/Button';
-import { IconButton } from '../components/shared/IconButton';
+import { Button } from './shared/Button';
+import { IconButton } from './shared/IconButton';
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    return(
+
+    return (
         <nav className="navbar">
             <div className="nav-container">
-                <div className="nav-hambuger">
-                    <IconButton icon="MENU" onClick={() => setMenuOpen(!menuOpen)} />
+                <div className='nav-hamburger'>
+                    <IconButton icon="list" ariaLabel="Menu" onClick={() => setMenuOpen(!menuOpen)} />
                 </div>
-                <span className="navbar-logo">tri<span className="navbar-logo-accent">lok</span>
+
+                <span className="navbar-logo">
+                    tri<span className="navbar-logo-accent">lok</span>
                 </span>
 
-                <div className='nav-link-desktop'>
-                     <a href="#" className="nav-link">Home</a>
-                    <a href="#" className="nav-link">Movies</a>
-                    <a href="#" className="nav-link">TV Shows</a>
-                    <a href="#" className="nav-link">Genre</a>F
-                </div>
-
                 <div className="navbar-action">
-                    <IconButton icon="SEARCH" />
-                    <Button variant="subscribe" onClick={() => {}}>Subscribe</Button>
+                    <IconButton icon="search" ariaLabel="Search" />
+                    <Button variant="subscribe" icon="bookmark-plus" onClick={() => { }}>
+                        Subscribe
+                    </Button>
                 </div>
             </div>
 
@@ -36,4 +34,5 @@ export const Navbar = () => {
                 </div>
             )}
         </nav>
-    )}
+    );
+};

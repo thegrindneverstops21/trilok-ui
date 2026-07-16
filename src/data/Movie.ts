@@ -11,6 +11,7 @@ export const heroMovie: Movie = {
   posterUrl:
     "https://media.themoviedb.org/t/p/w220_and_h330_face/2pnZWHg9E34LLwLBLYUPLdZwer8.jpg",
   runtime: "5 Seasons",
+  language: "English",
   trailerUrl: "https://www.youtube.com/embed/K1-FoFj8Jbo?si=Wb5zncLStVdtxxQb",
   year: 2019,
 };
@@ -26,6 +27,7 @@ export const latestRelease: Movie[] = [
     posterUrl:
       "https://image.tmdb.org/t/p/original/doQPOCVlIWZBRC2ZVsSXHi0luL8.jpg",
     runtime: "1h 48m",
+    language: "English",
     trailerUrl: "",
     year: 2026,
   },
@@ -39,6 +41,7 @@ export const latestRelease: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
     runtime: "1h 55m",
+    language: "English",
     trailerUrl: "",
     year: 2026,
   },
@@ -52,6 +55,7 @@ export const latestRelease: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
     runtime: "1 Season",
+    language: "English",
     trailerUrl: "",
     year: 2026,
   },
@@ -65,6 +69,7 @@ export const latestRelease: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
     runtime: "2h 53m",
+    language: "English",
     trailerUrl: "",
     year: 2026,
   },
@@ -81,6 +86,7 @@ export const topTrending: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     runtime: "3 Seasons",
+    language: "English",
     trailerUrl: "",
     year: 2022,
     rank: 3,
@@ -95,6 +101,7 @@ export const topTrending: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
     runtime: "1h 42m",
+    language: "English",
     trailerUrl: "",
     year: 2026,
     rank: 4,
@@ -109,6 +116,7 @@ export const topTrending: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
     runtime: "1h 42m",
+    language: "English",
     trailerUrl: "",
     year: 2026,
     rank: 2,
@@ -123,10 +131,12 @@ export const topTrending: Movie[] = [
     posterUrl:
       "https://media.themoviedb.org/t/p/w220_and_h330_face/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
     runtime: "2h 22m",
+    language: "English",
     trailerUrl: "",
     year: 1994,
     rank: 1,
   },
+    
 ];
 
 export const movieGenre = [

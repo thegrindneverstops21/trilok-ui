@@ -3,6 +3,8 @@
     margin-top: var(--spacing-md);
     padding-bottom: var(--spacing-md);
     background-color: var(--color-bg-secondary);
+    padding: 80px 0;
+    width: min(92%);
 }
 
 .footer-content {

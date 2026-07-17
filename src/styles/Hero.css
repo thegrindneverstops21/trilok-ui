@@ -6,6 +6,7 @@
   align-items: center;
   color: #fff;
   font-family: "Inter", system-ui, sans-serif;
+  max-height: 610px;
 }
 
 .hero-background {
@@ -28,19 +29,21 @@
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(10, 10, 10, 0.95) 20%,
-    rgba(10, 10, 10, 0.3) 55%,
-    rgba(10, 10, 10, 0.9) 100%
+    rgba(0, 0, 0, .90) 18%,
+    rgba(0, 0, 0, .35) 52%,
+    rgba(0, 0, 0, .0) 100%
   );
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  left: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 520px;
   z-index: 1;
-  max-width: 640px;
-  padding: 4rem 2rem;
-  margin-left: 6rem;
-  display: flex;
+  padding:0;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;

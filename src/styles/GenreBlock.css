@@ -52,7 +52,7 @@
 
 .genre-block-drag {
     display: inline-block;
-    margin: var(--spacing-sm) var(--spacing-md)0;
+    margin: var(--spacing-sm) var(--spacing-md) 0;
     font-size: 0.75rem;
     color: var(--color-gray-mid);
     letter-spacing: 1px;
@@ -81,7 +81,7 @@
         font-size: 1.5rem;
     }
     .genre-section-title {
-        font-size: 2.5rem;
         max-width: 220px;
+        font-size: 2.5rem;
     }
 }

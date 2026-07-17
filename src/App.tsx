@@ -5,6 +5,7 @@ import { MovieRow } from "./components/MovieRow";
 import { Navbar } from "./components/Navbar";
 import { heroMovie, latestRelease, topTrending } from "./data/Movie";
 import './index.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function App() {
   const heroThumbnails = [
@@ -21,7 +22,7 @@ export default function App() {
         movie={heroMovie}
         thumbnails={heroThumbnails}
       />
-      <div>
+      <div className="container">
         <MovieRow title="Latest Release" movies={latestRelease} />
         <MovieRow title="Top Trending" movies={topTrending} showRank />
         <GenreSection />

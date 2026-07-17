@@ -1,20 +1,15 @@
 .movie-row {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 50px;
-  width: min
+ padding: var(--spacing-md) 0;
 }
 
 .movie-row-title {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: var(--color-red);
   text-transform: uppercase;
-  line-height: 1.5;
-  margin-bottom: var(--spacing-md);
-  padding:  var(--spacing-md);
-  display: grid;
-  
+  line-height: 1.1;
+  margin-bottom: var(--spacing-sm);
+  padding: 0 var(--spacing-md);
 }
 
 .movie-row-scroll {
@@ -31,8 +26,7 @@
 
 .movie-row-drag {
     display: inline-block;
-    margin-top: var(--spacing-sm);
-    margin-left: var(--spacing-md);
+    margin: var(--spacing-sm) var(--spacing-md);
     font-size: 0.75rem;
     color: var(--color-gray-mid);
     letter-spacing: 1px;
@@ -48,10 +42,28 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+  .movie-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+  }
+
   .movie-row-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
     max-width: 200px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .movie-row-scroll {
+    padding: 0 var(--spacing-md) var(--spacing-sm);
+  }
+
+  .movie-row-drag {
+    grid-column: 2;
+    margin: var(--spacing-sm) 0 0;
   }
 }
 

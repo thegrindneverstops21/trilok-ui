@@ -14,7 +14,7 @@ export const Navbar = () => {
                 <span className="navbar-logo">tri<span className="navbar-logo-accent">lok</span>
                 </span>
 
-                <div className='nav-link-desktop'>
+                <div className='nav-desktop'>
                      <a href="#" className="nav-link">Home</a>
                     <a href="#" className="nav-link">Movies</a>
                     <a href="#" className="nav-link">TV Shows</a>

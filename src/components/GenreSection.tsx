@@ -1,5 +1,6 @@
 import { movieGenre } from "../data/Movie";
 import { GenreBlock } from "./GenreBlock";
+import '../styles/GenreBlock.css';
 
 export const GenreSection = () => (
     <section className="genre-section">

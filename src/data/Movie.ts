@@ -2,7 +2,7 @@ import type { Movie } from "../types/Movie";
 
 export const heroMovie: Movie = {
   id: "the-choosen",
-  title: "",
+  title: "The Chosen",
   genre: ["Drama", "Family", "Action", "Adventure"],
   description:
     "The life of Christ through the eyes of those who encountered him",

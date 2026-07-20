@@ -55,8 +55,8 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
           <span className="hero-stream-label">Streaming Now</span>
         </div>
         <div className="hero-nav-arrows">
-          <IconButton variant="round" icon="→" />
-          <IconButton variant="round" icon="←" />
+          <IconButton variant="round" icon="arrow-left" ariaLabel="Previous" />
+          <IconButton variant="round" icon="arrow-right" ariaLabel="Next" />
         </div>
       </div>
       <div className="hero-thumbnails">

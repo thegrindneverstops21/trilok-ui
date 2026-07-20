@@ -7,7 +7,7 @@ export const heroMovie: Movie = {
   description:
     "The life of Christ through the eyes of those who encountered him",
   backdropUrl:
-    "https://media.themoviedb.org/t/p/w500_and_h282_face/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
+    "https://image.tmdb.org/t/p/original/3siv3RaQrdr2tQiv9jHq71sLlzo.jpg",
   posterUrl:
     "https://media.themoviedb.org/t/p/w220_and_h330_face/2pnZWHg9E34LLwLBLYUPLdZwer8.jpg",
   runtime: "5 Seasons",

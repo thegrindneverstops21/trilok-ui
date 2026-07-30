@@ -15,12 +15,11 @@ A dark-themed streaming platform UI, built as a ReactTS front-end challenge, rec
 ## Features
 
 - **Hero banner** with a full-bleed backdrop image, gradient overlay for text readability, and a playable trailer modal
-- **Clickable thumbnail strip** — clicking a thumbnail swaps the entire hero (backdrop, title, description, trailer) to feature that movie instead
-- **Horizontally scrolling movie rows** — Latest Release and Top Trending, built from the same reusable `MovieRow`/`MovieCard` components
-- **Rank-sorted Top Trending row** — automatically sorts by rank rather than relying on data order
+- **Horizontally scrolling movie rows**: Latest Release and Top Trending, built from the same reusable `MovieRow`/`MovieCard` components
+- **Rank-sorted Top Trending row**: automatically sorts by rank rather than relying on data order
 - **Genre section** with color-coded, scrollable genre blocks
-- **Responsive layout** — mobile-first CSS with breakpoints at 768px and 1024px; movie rows switch from a stacked mobile layout to a side-by-side sidebar layout on desktop
-- **Reusable component library** — `Button`, `IconButton`, `Column`, `GenreBlock`, and `MovieCard` are each written once and reused across multiple sections with different data/props
+- **Responsive layout**: mobile-first CSS with breakpoints at 768px and 1024px; movie rows switch from a stacked mobile layout to a side-by-side sidebar layout on desktop
+- **Reusable component library**: `Button`, `IconButton`, `Column`, `GenreBlock`, and `MovieCard` are each written once and reused across multiple sections with different data/props
 - **Real movie data** sourced from [TMDB](https://www.themoviedb.org/)
 
 ---

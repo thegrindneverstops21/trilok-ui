@@ -1,6 +1,12 @@
+<img src="https://socialify.git.ci/thegrindneverstops21/trilok-ui/image?language=1&name=1&owner=1&theme=Light" alt="trilok-ui" width="640" height="320" />
 # trilok.
 
-A dark-themed streaming platform UI, built as a ReactTS front-end challenge — recreating a provided design template with reusable components, plain CSS, and full responsiveness from mobile to desktop.
+A dark-themed streaming platform UI, built as a ReactTS front-end challenge, recreating a provided design template with reusable components, plain CSS, and full responsiveness from mobile to desktop.
+
+<img width="1905" height="922" alt="image" src="https://github.com/user-attachments/assets/291e933f-0b39-4f00-9894-34325c04e322" />
+<img width="1905" height="865" alt="image" src="https://github.com/user-attachments/assets/491defa4-b259-4f12-b33c-112d4fd23758" />
+<img width="1901" height="732" alt="image" src="https://github.com/user-attachments/assets/15734bab-3f26-4d04-a772-4f1650923aa2" />
+
 
 **Live demo:** [trilok-ui.netlify.app](https://trilok-ui.netlify.app/)
 
@@ -59,7 +65,7 @@ src/
   index.css               # Global design tokens (colors, spacing, fonts)
 ```
 
-**Why the split?** `data/` holds content, `types/` defines its shape, `components/` renders it. Swapping hardcoded data for a live API call would only require changing `data/Movie.ts` — every component that imports the `Movie` type keeps working unchanged.
+**Why the split?** `data/` holds content, `types/` defines its shape, `components/` renders it. Swapping hardcoded data for a live API call would only require changing `data/Movie.ts`, every component that imports the `Movie` type keeps working unchanged.
 
 ---
 

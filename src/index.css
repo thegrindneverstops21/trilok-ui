@@ -8,23 +8,33 @@ body {
   background-color: var(--color-bg);
   color: var(--color-white);
   font-family: var(--font-body);
-  overflow-x: hidden;
+}
+
+/* Anchor destinations must clear the sticky navigation. */
+[id] { scroll-margin-top: 5rem; }
+
+/* Visible focus and generous targets support keyboard and touch navigation. */
+button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .container {
   width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-@media (min-width: 1200px) {
-  .container {
-    padding: 0 var(--spacing-xl);
-  }
+  padding: 0 var(--hero-gutter);
 }
 
 :root {
+  /* Shared left/right spacing keeps the hero and navigation aligned. */
+  --hero-gutter: clamp(1.25rem, 6vw, 110px);
   --color-bg: #0d0d0d;
   --color-bg-secondary: #1a1a1a;
   --color-red: #e50914;
@@ -78,4 +88,9 @@ body {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+/* On smaller screens, leave more room for the content by using a fixed gutter. */
+@media (max-width: 1023px) {
+  :root { --hero-gutter: 1.25rem; }
 }

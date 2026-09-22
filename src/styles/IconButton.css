@@ -6,7 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.2s ease, backround-color 0.2s ease;
+    min-width: 44px;
+    min-height: 44px;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
 }
 
 .icon-btn--default {

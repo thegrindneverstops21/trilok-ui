@@ -14,8 +14,7 @@ export const MovieRow = ({
   movies,
   showRank = false,
 }: MovieRowProp ) => {
-  // [...movies] makes a copy: sort() changes its array, so sorting the copy protects
-  // the original data. Only trending rows are sorted; ?? 0 handles a missing rank.
+  // makes a copy: sort() changes its array, so sorting the copy protects,the original data. Only trending rows are sorted; ?? 0 handles a missing rank.
   const sortedMovies = showRank ? [...movies].sort((a,b) => (a.rank ?? 0) - (b.rank ?? 0)):movies;
 
   return (

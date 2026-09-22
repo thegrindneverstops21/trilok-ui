@@ -1,0 +1,19 @@
+.drag-scroll {
+  cursor: grab;
+  user-select: none;
+}
+
+.drag-scroll > * {
+  cursor: inherit;
+}
+
+.drag-scroll.is-dragging {
+  cursor: grabbing;
+  /* Follow the mouse immediately; smooth scrolling and snapping otherwise fight dragging. */
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.drag-scroll.is-dragging > * {
+  transform: none;
+}

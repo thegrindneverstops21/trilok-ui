@@ -32,6 +32,9 @@
 }
 
 .btn--subscribe {
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  white-space: nowrap;
   background: var(--color-red);
   color: var(--color-white);
   display: flex;

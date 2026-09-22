@@ -16,6 +16,8 @@ export const MovieCard: React.FC<MovieCardProps> = ({
       className="movie-card-poster"
       src={movie.posterUrl}
       alt={movie.title}
+      loading="lazy"
+      decoding="async"
     />
     <div className="movie-card-overlay">
       <h3 className="movie-card-title">{movie.title}</h3>

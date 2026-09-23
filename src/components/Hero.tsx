@@ -4,18 +4,21 @@ import { TrailerModal } from "../components/shared/TrailerModal";
 import "../styles/Hero.css";
 import { IconButton } from "./shared/IconButton";
 
+// Props describe the movie and preview images that the parent passes to this component.
 interface HeroProp {
   movie: Movie;
   thumbnails: string[];
 }
 
 export const Hero = ({ movie, thumbnails }: HeroProp) => {
+  // These state values control the trailer popup and the expanded description separately.
   const [isPlaying, setIsPlaying] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
+  // Keep long descriptions compact until the viewer clicks "more".
   const shortDesc = movie.description.slice(0, 90);
 
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-background">
         <img
           src={movie.backdropUrl}
@@ -36,7 +39,7 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
 
         <p className="hero-description">
           {showDescription ? movie.description : shortDesc}
-          {!showDescription && (
+          {!showDescription && movie.description.length > 90 && (
             <button
               className="hero-more-btn"
               onClick={() => setShowDescription(true)}
@@ -47,7 +50,7 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
         </p>
 
         <div className="hero-play">
-          <button className="hero-play-btn" onClick={() => setIsPlaying(true)}>
+          <button className="hero-play-btn" aria-label={`Play ${movie.title} trailer`} onClick={() => setIsPlaying(true)}>
             <svg viewBox="0 0 24 24" width="20" height="20">
               <polygon points="6,4 20,12 6,20" fill="white" />
             </svg>
@@ -65,6 +68,7 @@ export const Hero = ({ movie, thumbnails }: HeroProp) => {
         ))}
       </div>
 
+      {/* Open the popup only when Play was clicked and a trailer URL exists. */}
       {isPlaying && movie.trailerUrl && (
         <TrailerModal
           videoSrc={movie.trailerUrl}

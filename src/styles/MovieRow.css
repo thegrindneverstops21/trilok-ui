@@ -9,15 +9,17 @@
   text-transform: uppercase;
   line-height: 1.1;
   margin-bottom: var(--spacing-sm);
-  padding: 0 var(--spacing-md);
+  padding: 0;
 }
 
 .movie-row-scroll {
+    min-width: 0;
+    scroll-snap-type: x proximity;
     display: flex;
     gap: var(--spacing-md);
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 0 var(--spacing-md) var(--spacing-sm);
+    padding: 0 0 var(--spacing-sm);
 }
 
 .movie-row-scroll::-webkit-scrollbar {
@@ -26,7 +28,7 @@
 
 .movie-row-drag {
     display: inline-block;
-    margin: var(--spacing-sm) var(--spacing-md);
+    margin: var(--spacing-sm) 0;
     font-size: 0.75rem;
     color: var(--color-gray-mid);
     letter-spacing: 1px;
@@ -45,7 +47,8 @@
 @media (min-width: 1024px) {
   .movie-row {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    /* A zero minimum keeps long poster strips inside the grid's width. */
+    grid-template-columns: 180px minmax(0, 1fr);
     gap: var(--spacing-lg);
     align-items: start;
   }
@@ -58,7 +61,7 @@
   }
 
   .movie-row-scroll {
-    padding: 0 var(--spacing-md) var(--spacing-sm);
+    padding: 0 0 var(--spacing-sm);
   }
 
   .movie-row-drag {

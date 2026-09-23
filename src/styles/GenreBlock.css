@@ -1,23 +1,24 @@
 .genre-section {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
 }
 
 .genre-section-title {
     font-family: var(--font-heading);
     font-size: 1.5rem;
-    color: var(--color-white);
+    color: var(--color-red);
     text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: var(--spacing-sm);
-    padding: 0 var(--spacing-md);
+    padding: 0;
 }
 
 .genre-section-grid {
+    min-width: 0;
     display: flex;
     gap:var(--spacing-sm);
     overflow-x: auto;
     scrollbar-width: none;
-    padding: 0 var(--spacing-md);
+    padding: 0;
 }
 
 .genre-section-grid::-webkit-scrollbar {
@@ -33,7 +34,7 @@
     justify-content: center;
     flex-shrink: 0;
     cursor: pointer;
-    transition: 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .genre-block:hover {
@@ -52,7 +53,7 @@
 
 .genre-block-drag {
     display: inline-block;
-    margin: var(--spacing-sm) var(--spacing-md) 0;
+    margin: var(--spacing-sm) 0 0;
     font-size: 0.75rem;
     color: var(--color-gray-mid);
     letter-spacing: 1px;
@@ -85,3 +86,16 @@
         font-size: 2.5rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .genre-section {
+        display: grid;
+        grid-template-columns: 180px minmax(0, 1fr);
+        gap: var(--spacing-lg);
+    }
+    .genre-section-title { padding: 0; }
+    .genre-block-drag { grid-column: 2; }
+}
+
+/* Match the reference heading while keeping tile labels white. */
+.genre-section-title { color: var(--color-red); }

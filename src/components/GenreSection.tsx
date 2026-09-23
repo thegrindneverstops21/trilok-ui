@@ -1,17 +1,18 @@
 import { movieGenre } from "../data/Movie";
 import { GenreBlock } from "./GenreBlock";
+import { DragScroll } from "./shared/DragScroll";
 import "../styles/GenreBlock.css";
 
 export const GenreSection = () => (
-    <section className="genre-section">
-        <div className="genre-section-grid">
-            <h2 className="genre-section-title">Select Genre</h2>
+    <section className="genre-section" id="genres">
+        <h2 className="genre-section-title">Select Genre</h2>
+        <DragScroll className="genre-section-grid" label="Movie genres">
 
             {movieGenre.map((genre) => (
                 <GenreBlock key={genre.id} label={genre.label} color={genre.color} />
             ))}
-        </div>
+        </DragScroll>
 
-        <span className="genre-block-drag">DRAG TO NEXT →</span>
+        <span className="genre-block-drag">Swipe or drag to explore →</span>
     </section>
 );

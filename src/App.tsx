@@ -8,6 +8,7 @@ import './index.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function App() {
+  // Pick preview images from the movie lists. Optional chaining (?.) handles missing items, and filter(Boolean) removes any missing image URLs before they reach the Hero.
   const heroThumbnails = [
     latestRelease[0]?.posterUrl,
     latestRelease[1]?.posterUrl,
@@ -22,11 +23,11 @@ export default function App() {
         movie={heroMovie}
         thumbnails={heroThumbnails}
       />
-      <div className="container">
+      <main className="container" id="movies">
         <MovieRow title="Latest Release" movies={latestRelease} />
         <MovieRow title="Top Trending" movies={topTrending} showRank />
         <GenreSection />
-      </div>
+      </main>
       <Footer />
     </div>
   );

@@ -3,9 +3,13 @@
 
 A dark-themed streaming platform UI, built as a ReactTS front-end challenge, recreating a provided design template with reusable components, plain CSS, and full responsiveness from mobile to desktop.
 
-<img width="1905" height="922" alt="image" src="https://github.com/user-attachments/assets/291e933f-0b39-4f00-9894-34325c04e322" />
-<img width="1905" height="865" alt="image" src="https://github.com/user-attachments/assets/491defa4-b259-4f12-b33c-112d4fd23758" />
-<img width="1901" height="732" alt="image" src="https://github.com/user-attachments/assets/15734bab-3f26-4d04-a772-4f1650923aa2" />
+<img width="1852" height="684" alt="image" src="https://github.com/user-attachments/assets/8ad26fbc-4513-476b-bc14-e6d51465e2e4" />
+
+<img width="1852" height="552" alt="image" src="https://github.com/user-attachments/assets/9c423c1a-223b-470f-9295-3b7053795f7a" />
+
+<img width="1861" height="627" alt="image" src="https://github.com/user-attachments/assets/ae39be25-3fd6-4079-88aa-993b5f299acd" />
+
+<img width="1864" height="653" alt="image" src="https://github.com/user-attachments/assets/0c254118-12af-43f8-918d-cde9da252a0d" />
 
 
 **Live demo:** [trilok-ui.netlify.app](https://trilok-ui.netlify.app/)
